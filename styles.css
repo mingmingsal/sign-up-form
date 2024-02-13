@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: "Roboto", Geneva, Tahoma, sans-serif;
+
+}
+@font-face {
+    font-family: "Norse";
+    src: url(/fonts/Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#banner {
+    font-family: "Norse", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(00, 00, 00, 50%);
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    max-height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    align-items: center;
+}
+#banner  img {
+    max-height: 200px;
+    height: 20%;
+}
+#bgImage {
+    width: 100%;
+}
+
+#rightPanel {
+    color: black;
+    flex: 1.5;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+#blurbPanel {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    font-size: 2rem;
+}
+#blurbPanel p {
+    margin-bottom: 1.5rem;
+}
+#formPanel {
+    color:#303030;
+    padding: 2% 5%;
+    box-shadow: 10px 5px 5px #A9A9A9;
+    border: 5px 0;
+    border-color: #E5E7EB;
+    border-style: solid;
+    
+}
+form {
+    flex: 2;
+}
+#formPanel fieldset {
+    display: flex;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+#formPanel h1 {
+    padding-bottom: 1.5%;
+}
+#formPanel fieldset div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    color:#303030;
+    font-weight: 700;
+}
+#formPanel input {
+    width: 80%;
+    margin-bottom: 4%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 3px solid #E5E7EB;
+    
+}
+#formPanel input:focus {
+    border: 3px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#rightPanel div{
+    flex: 1;
+}
+#leftPanel {
+    flex: 1;
+}
+#btnPanel {
+    padding: 5%;
+}
+#btnPanel button{
+    background-color: #596D48;
+    padding: 1rem 5rem;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+#btnPanel p {
+    font-size: 1.2rem;
+}
+#btnPanel a {
+    text-decoration: none;
+    color: #596D48;
+    
+}
+label,input{
+    display:flex;
+    flex-direction:column;
+  }
+
+  #formPanel input:user-invalid {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+  
+#passwordError {
+    color: red;
+    
+}
